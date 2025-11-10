@@ -1,7 +1,7 @@
 //Function to display posts
 function displayPosts(posts) {
   const postList = document.getElementById('post-list');
-  postList.innerHTML = ''; //Clear any existing content
+  postList.innerHTML = '';
 
   posts.forEach(post => {
     const li = document.createElement('li');
