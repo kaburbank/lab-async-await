@@ -1,7 +1,7 @@
 //Function to display posts
 function displayPosts(posts) {
-  const postList = document.getElementById('post-list');
-  postList.innerHTML = '';
+  const ul = document.getElementById('post-list');
+  ul.innerHTML = ''; 
 
   posts.forEach(post => {
     const li = document.createElement('li');
@@ -14,7 +14,7 @@ function displayPosts(posts) {
 
     li.appendChild(h1);
     li.appendChild(p);
-    postList.appendChild(li);
+    ul.appendChild(li);
   });
 };
 
